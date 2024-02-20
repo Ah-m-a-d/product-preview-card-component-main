@@ -1,0 +1,88 @@
+:root{
+--DarkCyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--VeryDarkBlue: hsl(212, 21%, 14%);
+--DarkGrayishBlue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-color: var(--Cream);
+}
+.container{
+    display: flex;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@media (max-width : 767px) {
+    .container{
+        display: block;
+        border-radius: .375rem;
+    }
+    .content{
+        padding-top: 0!important;
+    }
+    .content>p{
+        margin: 0!important;
+    }
+    .price{
+        margin: 0!important;
+    }
+    .content .add{
+        margin: 0!important;
+    }
+    .img{
+    background-image: url(/images/image-product-mobile.jpg)!important;
+    height: 20rem;
+    background-position: left;
+    }
+}
+.content{
+    background-color: var(--White);
+    width: 20rem;
+}
+p{
+    font-size: 14pX;
+    color: var(--VeryDarkBlue);
+}
+.img{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    width:20rem;
+}
+.n01{
+    letter-spacing: 4px;
+}
+h1{
+    font-family: "Fraunces", sans-serif;
+}
+.price h2{
+    font-family: "Fraunces", sans-serif;
+    color: var(--DarkCyan);
+}
+.price span{
+    text-decoration: line-through;
+}
+.add{
+    background-color: var(--DarkCyan);
+    color: var(--Cream);
+    cursor: pointer;
+    p{
+        color: var(--Cream);
+    }
+}
+.add:hover{
+    background-color: hsl(113.79deg 14.57% 39.02%);
+}
